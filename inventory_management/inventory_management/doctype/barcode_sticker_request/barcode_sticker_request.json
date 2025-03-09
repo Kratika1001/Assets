@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{YY}-{MM}-{#####}",
+ "creation": "2025-01-13 17:33:02.263621",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_tab_tab",
+  "section_break_tybe",
+  "number_count",
+  "linked_asset",
+  "generated_numbers",
+  "column_break_spit",
+  "date_of_barcoding",
+  "name_of_item",
+  "assigned_department",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_tab_tab",
+   "fieldtype": "Tab Break",
+   "label": "Request Tab"
+  },
+  {
+   "fieldname": "section_break_tybe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "number_count",
+   "fieldtype": "Int",
+   "label": "Number Count"
+  },
+  {
+   "fieldname": "linked_asset",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Asset",
+   "options": "Asset",
+   "reqd": 1
+  },
+  {
+   "fieldname": "generated_numbers",
+   "fieldtype": "Text",
+   "label": "Generated numbers"
+  },
+  {
+   "fieldname": "column_break_spit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_barcoding",
+   "fieldtype": "Date",
+   "label": "Date of Barcoding"
+  },
+  {
+   "fetch_from": "linked_asset.item_name",
+   "fieldname": "name_of_item",
+   "fieldtype": "Link",
+   "label": "Name of item",
+   "options": "Asset"
+  },
+  {
+   "fieldname": "assigned_department",
+   "fieldtype": "Link",
+   "label": "Assigned Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Barcode Sticker Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-02 15:07:17.864137",
+ "modified_by": "Administrator",
+ "module": "Inventory Management",
+ "name": "Barcode Sticker Request",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

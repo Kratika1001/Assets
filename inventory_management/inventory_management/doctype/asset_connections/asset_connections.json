@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:capex_request",
+ "creation": "2025-02-03 10:00:12.721270",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "capex_request",
+  "siddhart_request",
+  "grn",
+  "purchase_order",
+  "barcode",
+  "owner_department",
+  "user_department",
+  "maintenance_due_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "capex_request",
+   "fieldtype": "Data",
+   "label": "Capex Request",
+   "unique": 1
+  },
+  {
+   "fieldname": "siddhart_request",
+   "fieldtype": "Data",
+   "label": "Siddhart Request"
+  },
+  {
+   "fieldname": "grn",
+   "fieldtype": "Data",
+   "label": "GRN"
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Data",
+   "label": "Purchase Order"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "owner_department",
+   "fieldtype": "Data",
+   "label": "Owner department"
+  },
+  {
+   "fieldname": "user_department",
+   "fieldtype": "Data",
+   "label": "User Department"
+  },
+  {
+   "fieldname": "maintenance_due_date",
+   "fieldtype": "Data",
+   "label": "Maintenance Due Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-02 15:13:00.065554",
+ "modified_by": "Administrator",
+ "module": "Inventory Management",
+ "name": "Asset Connections",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

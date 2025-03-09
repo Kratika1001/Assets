@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:asset_name",
+ "creation": "2025-01-12 17:12:48.152928",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_mexs",
+  "asset_name",
+  "periodicity",
+  "task_done_by",
+  "column_break_rnez",
+  "maintenance_type",
+  "service_provider",
+  "section_break_schu",
+  "table_ahzz"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_mexs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "asset_name",
+   "fieldtype": "Link",
+   "label": "Asset Name",
+   "options": "Asset",
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_schu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_ahzz",
+   "fieldtype": "Table",
+   "options": "Asset Maintenance Task"
+  },
+  {
+   "fieldname": "maintenance_type",
+   "fieldtype": "Select",
+   "label": "Maintenance Type ",
+   "options": "--Select--\nPreventive Maintenance\nCalibration"
+  },
+  {
+   "fieldname": "periodicity",
+   "fieldtype": "Select",
+   "label": "Periodicity",
+   "options": "--Select--\nDaily\nWeekly\nMonthly\nQuarterly\nYearly\n2 Yearly"
+  },
+  {
+   "fieldname": "task_done_by",
+   "fieldtype": "Link",
+   "label": "Task Done By",
+   "options": "Asset Maintenance Team"
+  },
+  {
+   "fieldname": "column_break_rnez",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "service_provider",
+   "fieldtype": "Select",
+   "label": "Service Provider",
+   "options": "--Select--\nInternal Maintenance\nExternal\nAMC\nOther"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-06 11:10:13.498179",
+ "modified_by": "Administrator",
+ "module": "Inventory Management",
+ "name": "Maintenance",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

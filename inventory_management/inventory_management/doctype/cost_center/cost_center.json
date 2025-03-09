@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-12 16:48:59.381444",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fs6k",
+  "cost_center_name",
+  "parent_cost_center_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_fs6k",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cost_center_name",
+   "fieldtype": "Data",
+   "label": "Cost Center Name"
+  },
+  {
+   "fieldname": "parent_cost_center_name",
+   "fieldtype": "Link",
+   "label": "Parent Cost Center Name",
+   "options": "Cost Center"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-02 15:10:51.494901",
+ "modified_by": "Administrator",
+ "module": "Inventory Management",
+ "name": "Cost Center",
+ "nsm_parent_field": "parent_cost_center",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

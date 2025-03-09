@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:barcode",
+ "creation": "2025-03-02 17:23:22.188126",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "barcode",
+  "column_break_whpj",
+  "created_on",
+  "column_break_ytyl",
+  "request_id",
+  "column_break_gvqm",
+  "allocated_department"
+ ],
+ "fields": [
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Barcode",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_whpj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ytyl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_id",
+   "fieldtype": "Link",
+   "label": "Request ID",
+   "options": "Code Request Form",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gvqm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "request_id.department",
+   "fieldname": "allocated_department",
+   "fieldtype": "Data",
+   "label": "Allocated Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Date",
+   "label": "Created on",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-04 16:56:35.416039",
+ "modified_by": "Administrator",
+ "module": "Inventory Management",
+ "name": "Code Allocation",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

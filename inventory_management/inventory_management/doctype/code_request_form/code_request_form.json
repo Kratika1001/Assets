@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{YYYY}-{MM}-{####}",
+ "creation": "2025-03-04 10:19:12.497907",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "number_of_codes",
+  "column_break_hlqu",
+  "department",
+  "column_break_clmr",
+  "created_by",
+  "column_break_hgxk",
+  "request_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "number_of_codes",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Codes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hlqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_clmr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "label": "Created By",
+   "read_only": 1,
+   "read_only_depends_on": "eval:frappe.session.user"
+  },
+  {
+   "fieldname": "column_break_hgxk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_id",
+   "fieldtype": "Data",
+   "label": "Request ID",
+   "read_only": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-04 16:50:07.517451",
+ "modified_by": "Administrator",
+ "module": "Inventory Management",
+ "name": "Code Request Form",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,431 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:item_name",
+ "creation": "2025-01-12 16:30:15.281986",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_oytn",
+  "item_name",
+  "asset_code",
+  "column_break_kggq",
+  "date_of_inventory",
+  "department_owner",
+  "user_department",
+  "is_existing_asset",
+  "details_section",
+  "asset_area",
+  "asset_category",
+  "column_break_uvje",
+  "asset_location",
+  "asset_sub_category",
+  "column_break_vucl",
+  "asset_sub_location",
+  "quantity",
+  "asset_details_section",
+  "description",
+  "grn_id",
+  "purchase_date",
+  "basic_rate",
+  "old_inventory_number",
+  "size",
+  "insurance",
+  "serial_no",
+  "column_break_woiz",
+  "plate_no",
+  "invoice_number",
+  "model",
+  "rate_rs",
+  "life_span",
+  "unit_of_measure",
+  "bar_code_number",
+  "purchase_cost",
+  "column_break_hqgo",
+  "warrenty",
+  "date_of_manufacture",
+  "brand",
+  "supplier_vendor",
+  "current_period_warranty",
+  "general_condition",
+  "specification",
+  "accounting_dimensions_section",
+  "cost_center",
+  "purchase_details_section",
+  "purchase_receipt",
+  "available_for_use_date",
+  "column_break_qcod",
+  "purchase_invoice",
+  "po_number",
+  "insurance_details_section",
+  "policy_number",
+  "insurer",
+  "insured_value",
+  "column_break_bqug",
+  "insurance_start_date",
+  "insurance_end_date",
+  "comprehensive_insurance",
+  "maintenance_section",
+  "is_maintenance_required",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_oytn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial no"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "unique": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "asset_code",
+   "fieldtype": "Data",
+   "label": "Asset Code"
+  },
+  {
+   "fieldname": "column_break_kggq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_inventory",
+   "fieldtype": "Date",
+   "label": "Date of inventory"
+  },
+  {
+   "fieldname": "department_owner",
+   "fieldtype": "Link",
+   "label": "Department Owner",
+   "options": "Department"
+  },
+  {
+   "fieldname": "user_department",
+   "fieldtype": "Link",
+   "label": "User Department",
+   "options": "Department"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_existing_asset",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Existing Asset"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Location And Category"
+  },
+  {
+   "fieldname": "asset_area",
+   "fieldtype": "Link",
+   "label": "Area",
+   "options": "Location"
+  },
+  {
+   "fieldname": "asset_category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Category"
+  },
+  {
+   "fieldname": "column_break_uvje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "asset_location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "asset_sub_category",
+   "fieldtype": "Link",
+   "label": "Sub Category",
+   "options": "Category"
+  },
+  {
+   "fieldname": "column_break_vucl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "asset_sub_location",
+   "fieldtype": "Link",
+   "label": "Sub Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "asset_details_section",
+   "fieldtype": "Section Break",
+   "label": "Asset Details"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "grn_id",
+   "fieldtype": "Data",
+   "label": "GRN ID"
+  },
+  {
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase date"
+  },
+  {
+   "fieldname": "basic_rate",
+   "fieldtype": "Data",
+   "label": "Basic Rate"
+  },
+  {
+   "fieldname": "old_inventory_number",
+   "fieldtype": "Data",
+   "label": "Old Inventory Number"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "insurance",
+   "fieldtype": "Data",
+   "label": "Insurance"
+  },
+  {
+   "fieldname": "bar_code_number",
+   "fieldtype": "Data",
+   "label": "Bar Code Number"
+  },
+  {
+   "fieldname": "column_break_woiz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plate_no",
+   "fieldtype": "Data",
+   "label": "Plate no"
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "label": "Invoice Number"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "rate_rs",
+   "fieldtype": "Data",
+   "label": "Rate(rs)"
+  },
+  {
+   "fieldname": "life_span",
+   "fieldtype": "Data",
+   "label": "Life span"
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Data",
+   "label": "Unit of measure"
+  },
+  {
+   "fieldname": "column_break_hqgo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warrenty",
+   "fieldtype": "Data",
+   "label": "Warrenty"
+  },
+  {
+   "fieldname": "date_of_manufacture",
+   "fieldtype": "Date",
+   "label": "Date of manufacture"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand"
+  },
+  {
+   "fieldname": "supplier_vendor",
+   "fieldtype": "Data",
+   "label": "Supplier/Vender"
+  },
+  {
+   "fieldname": "current_period_warranty",
+   "fieldtype": "Data",
+   "label": "Current Period warranty"
+  },
+  {
+   "fieldname": "general_condition",
+   "fieldtype": "Data",
+   "label": "General condition"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "accounting_dimensions_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Dimensions"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "purchase_details_section",
+   "fieldtype": "Section Break",
+   "label": "Purchase Details"
+  },
+  {
+   "fieldname": "purchase_receipt",
+   "fieldtype": "Link",
+   "label": "Purchase Receipt",
+   "options": "Purchase Receipt"
+  },
+  {
+   "fieldname": "available_for_use_date",
+   "fieldtype": "Date",
+   "label": "Available For Use Date"
+  },
+  {
+   "fieldname": "column_break_qcod",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice",
+   "options": "Purchase Invoice"
+  },
+  {
+   "fieldname": "po_number",
+   "fieldtype": "Data",
+   "label": "PO Number"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "insurance_details_section",
+   "fieldtype": "Section Break",
+   "label": "Insurance Details"
+  },
+  {
+   "fieldname": "policy_number",
+   "fieldtype": "Data",
+   "label": "Policy Number"
+  },
+  {
+   "fieldname": "insurer",
+   "fieldtype": "Data",
+   "label": "Insurer"
+  },
+  {
+   "fieldname": "insured_value",
+   "fieldtype": "Data",
+   "label": "Insured Value"
+  },
+  {
+   "fieldname": "column_break_bqug",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insurance_start_date",
+   "fieldtype": "Date",
+   "label": "Insurance Start Date"
+  },
+  {
+   "fieldname": "insurance_end_date",
+   "fieldtype": "Date",
+   "label": "Insurance End Date"
+  },
+  {
+   "fieldname": "comprehensive_insurance",
+   "fieldtype": "Data",
+   "label": "Comprehensive Insurance"
+  },
+  {
+   "fieldname": "maintenance_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Maintenance"
+  },
+  {
+   "default": "0",
+   "description": "Check if Asset requires Preventive Maintenance or Calibration",
+   "fieldname": "is_maintenance_required",
+   "fieldtype": "Check",
+   "label": "Is Maintenance/AMC Required"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Asset",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "specification",
+   "fieldtype": "Data",
+   "label": "Specification"
+  },
+  {
+   "fieldname": "purchase_cost",
+   "fieldtype": "Int",
+   "label": "Purchase Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-08 16:33:28.749237",
+ "modified_by": "Administrator",
+ "module": "Inventory Management",
+ "name": "Asset",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
